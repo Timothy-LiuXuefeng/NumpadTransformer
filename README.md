@@ -6,11 +6,19 @@ This product intends to provide those who don't have a numpad on his keyboard wi
 
 This product runs on Windows 10 well, but hasn't tested on other Windows OSs.
 
+To get this product, you have two options.
+
+## 1. Downoad the source and build
+
+The source is just in this GitHub repository.
+
 To build this project, you should use MSVC 19.28 or more, and set `/std:c++17` option. 
 
 After building it on Release mode, execute `ReleaseProduct.cmd` or `ReleaseProduct(x64).cmd` to release the product. And the product will appear in the "Numpad Transformer Product" file folder or "Numpad Transformer Product (x64)" file folder.
 
+## 2. Download the release version
 
+The release version has been uploaded into the cloud. You can enter [https://cloud.tsinghua.edu.cn/d/c3f9c9afac254a9d8139/](https://cloud.tsinghua.edu.cn/d/c3f9c9afac254a9d8139/) to download the release version.
 
 ---
 
@@ -20,6 +28,14 @@ After building it on Release mode, execute `ReleaseProduct.cmd` or `ReleaseProdu
 
 本产品在 Windows 10 系统上运行良好，但是在其他的 Windows 系统上并没有测试过。
 
+获取本产品有两种方式。
+
+## 1. 下载源码并生成
+
 如果要生成这个项目，你应该使用 MSVC 19.28 以上版本，并设置 `/std:c++17` 选项。
 
 在 Release 模式下生成之后，运行 `ReleaseProduct.cmd` 或 `ReleaseProduct(x64).cmd` 来发布产品，然后产品便会出现在“Numpad Transformer Product”或“Numpad Transformer Product (x64)”文件夹内。
+
+## 2. 下载发行版
+
+发行版已经上传到云端。你可以进入网站 [https://cloud.tsinghua.edu.cn/d/c3f9c9afac254a9d8139/](https://cloud.tsinghua.edu.cn/d/c3f9c9afac254a9d8139/) 来下载发行版。
