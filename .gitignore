@@ -1,0 +1,12 @@
+/.vs/
+/.vscode/
+/Debug/
+/Release/
+/x64/
+/*/Debug/
+/*/Release/
+/*/x64/
+/*/*.aps
+/ImageMaker/
+/Numpad Transformer Product/
+/Numpad Transformer Product (x64)/
