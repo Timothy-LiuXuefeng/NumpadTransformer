@@ -8,7 +8,7 @@
 const LPCTSTR UI::aboutInfo = 
 TEXT(R"(Author: Timothy Liu
 Platform: Windows 10
-Version: 1.0.0.0
+Version: 1.0.1.0
 Copyleft (C) 2021
 )");
 
@@ -191,6 +191,7 @@ bool UI::MessageProc(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
 			}
 			else
 			{
+				KeyBoardHooker::GetObj().EndHook();
 			beginHook:
 				if (!KeyBoardHooker::GetObj().BeginHook())
 				{
