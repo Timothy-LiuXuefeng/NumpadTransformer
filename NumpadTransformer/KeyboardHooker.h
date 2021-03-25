@@ -11,7 +11,7 @@ class KeyBoardHooker
 {
 public:
 	
-	bool BeginHook();
+	bool RebeginHook();
 	void EndHook();
 	~KeyBoardHooker()
 	{

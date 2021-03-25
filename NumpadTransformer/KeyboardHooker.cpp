@@ -1,7 +1,8 @@
 #include "KeyboardHooker.h"
 
-bool KeyBoardHooker::BeginHook()
+bool KeyBoardHooker::RebeginHook()
 {
+	EndHook();
 	m_hHook = SetWindowsHookEx(WH_KEYBOARD_LL, LowKeyBoardProc, GetModuleHandle(NULL), 0);
 	return static_cast<bool>(m_hHook);
 }

@@ -191,9 +191,8 @@ bool UI::MessageProc(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
 			}
 			else
 			{
-				KeyBoardHooker::GetObj().EndHook();
 			beginHook:
-				if (!KeyBoardHooker::GetObj().BeginHook())
+				if (!KeyBoardHooker::GetObj().RebeginHook())
 				{
 					std::_tstring errStr = TEXT("Fail to set hook! Error code: ");
 					errStr += std::to_tstring(GetLastError());
