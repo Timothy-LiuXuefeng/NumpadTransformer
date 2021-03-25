@@ -27,7 +27,7 @@ private:
 
 	HHOOK m_hHook = NULL;
 	std::function<void(WPARAM, LPARAM)> hookCall = [](WPARAM, LPARAM) {};
-	KeyBoardHooker() {}		// I don't know how to encapsule the static function SetWindowsHook. Just singleton pattern!
+	KeyBoardHooker() = default;		// I don't know how to encapsule the static function SetWindowsHook. Just singleton pattern!
 	KeyBoardHooker(const KeyBoardHooker&) = delete;
 	KeyBoardHooker& operator=(const KeyBoardHooker&) = delete;
 
