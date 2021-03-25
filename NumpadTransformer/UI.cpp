@@ -8,7 +8,7 @@
 const LPCTSTR UI::aboutInfo = 
 TEXT(R"(Author: Timothy Liu
 Platform: Windows 10
-Version: 1.0.1.0
+Version: 1.0.2.0
 Copyleft (C) 2021
 )");
 
@@ -19,10 +19,8 @@ UI::UI()
 	posToKey.emplace_back(VK_RETURN, TEXT("RETURN"));
 	posToKey.emplace_back(VK_BACK, TEXT("BACKSPACE"));
 	posToKey.emplace_back(VK_SPACE, TEXT("SPACE"));
-	posToKey.emplace_back(VK_CONTROL, TEXT("CTRL"));
-	posToKey.emplace_back(VK_MENU, TEXT("ALT"));
 	posToKey.emplace_back(VK_ESCAPE, TEXT("ESC"));
-	posToKey.emplace_back(VK_TAB, TEXT("TAB"));
+	//posToKey.emplace_back(VK_TAB, TEXT("TAB"));
 	posToKey.emplace_back(VK_PRIOR, TEXT("PAGE UP"));
 	posToKey.emplace_back(VK_NEXT, TEXT("PAGE DOWN"));
 	posToKey.emplace_back(VK_HOME, TEXT("HOME"));
@@ -47,6 +45,13 @@ UI::UI()
 		fnKeyStr += std::to_tstring(i - VK_F1 + 1);
 		posToKey.emplace_back(i, fnKeyStr.c_str());
 	}
+
+	//posToKey.emplace_back(VK_LCONTROL, TEXT("LEFT CTRL"));
+	//posToKey.emplace_back(VK_RCONTROL, TEXT("RIGHT CTRL"));
+	//posToKey.emplace_back(VK_LMENU, TEXT("LEFT ALT"));
+	//posToKey.emplace_back(VK_RMENU, TEXT("RIGHT ALT"));
+	//posToKey.emplace_back(VK_LSHIFT, TEXT("LEFT SHIFT"));
+	//posToKey.emplace_back(VK_RSHIFT, TEXT("RIGHT SHIFT"));
 
 #define TRANSFORM_LISTBOX_AND_NUMPAD(i) (listBoxIDToVkCode[IDC_LISTNUMPAD##i] = VK_NUMPAD##i)
 	
